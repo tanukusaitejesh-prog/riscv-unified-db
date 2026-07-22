@@ -44,7 +44,7 @@ RUN dnf install -y dnf-plugins-core \
 
 ENV PATH=/opt/rh/gcc-toolset-14/root/usr/bin:$PATH
 ENV LD_LIBRARY_PATH=/opt/rh/gcc-toolset-14/root/usr/lib64${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
-
+#These ENVs are used to show path to the environment variables
 # Build riscv-gnu-toolchain from source.
 # Produces both:
 #   riscv64-unknown-elf-gcc      (bare-metal ELF cross-compiler)
